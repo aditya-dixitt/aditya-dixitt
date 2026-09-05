@@ -2,15 +2,6 @@
 
 # ADITYA DIXITT
 
-<p style="color: #00f0ff">This line is trying to be cyan.</p>
-
-`PLAYER 01` · `DEVELOPER // BUILDER // PROBLEM SOLVER`
-
-</div>
-<div align="center">
-
-# ADITYA DIXITT
-
 `PLAYER 01` · `DEVELOPER // BUILDER // PROBLEM SOLVER`
 
 </div>
