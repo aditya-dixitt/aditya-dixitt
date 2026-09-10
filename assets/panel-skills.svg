@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 456" width="900" height="456" role="img">
+<defs>
+  <pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M30 0H0V30" fill="none" stroke="#0f1c27" stroke-width="1"/>
+  </pattern>
+  <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+    <stop offset="22%" stop-color="#00f0ff"/>
+    <stop offset="72%" stop-color="#ff2bd6"/>
+    <stop offset="100%" stop-color="#ff2bd6" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<rect width="900" height="456" rx="14" fill="#05070d"/>
+<rect width="900" height="456" rx="14" fill="url(#g)" opacity="0.5"/>
+<rect x="30" y="26" width="4" height="20" rx="2" fill="#ff2bd6"/>
+<text x="46" y="44" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="18" font-weight="700" letter-spacing="4.5" fill="#ff2bd6" text-anchor="start">SKILL TREE</text>
+<rect x="30" y="62" width="840" height="1.5" fill="url(#rule)"/>
+<rect x="30" y="88" width="405" height="152" rx="10" fill="#080d15" stroke="#16303f" stroke-width="1.5"/><text x="54" y="120" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="15" font-weight="700" letter-spacing="3.4" fill="#ff2bd6" text-anchor="start">LANGUAGES</text><path d="M54 134v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="72" y="154" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">C++</text><rect x="330" y="143" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="348" y="143" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="366" y="143" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="384" y="143" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="402" y="143" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M54 168v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="72" y="188" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">JavaScript</text><rect x="330" y="177" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="348" y="177" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="366" y="177" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="384" y="177" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="402" y="177" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M54 202v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="72" y="222" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">Java</text><rect x="330" y="211" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="348" y="211" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="366" y="211" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="384" y="211" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="402" y="211" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="465" y="88" width="405" height="152" rx="10" fill="#080d15" stroke="#16303f" stroke-width="1.5"/><text x="489" y="120" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="15" font-weight="700" letter-spacing="3.4" fill="#ff2bd6" text-anchor="start">WEB</text><path d="M489 134v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="507" y="154" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">HTML / CSS</text><rect x="765" y="143" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="783" y="143" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="801" y="143" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="819" y="143" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="837" y="143" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M489 168v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="507" y="188" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">React</text><rect x="765" y="177" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="783" y="177" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="801" y="177" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="819" y="177" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="837" y="177" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M489 202v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="507" y="222" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">Node.js</text><rect x="765" y="211" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="783" y="211" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="801" y="211" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="819" y="211" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="837" y="211" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="30" y="260" width="405" height="152" rx="10" fill="#080d15" stroke="#16303f" stroke-width="1.5"/><text x="54" y="292" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="15" font-weight="700" letter-spacing="3.4" fill="#ff2bd6" text-anchor="start">CORE CS</text><path d="M54 306v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="72" y="326" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">Data Structures</text><rect x="330" y="315" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="348" y="315" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="366" y="315" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="384" y="315" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="402" y="315" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M54 340v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="72" y="360" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">Algorithms</text><rect x="330" y="349" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="348" y="349" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="366" y="349" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="384" y="349" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="402" y="349" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M54 374v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="72" y="394" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">OS / DBMS</text><rect x="330" y="383" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="348" y="383" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="366" y="383" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="384" y="383" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="402" y="383" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="465" y="260" width="405" height="152" rx="10" fill="#080d15" stroke="#16303f" stroke-width="1.5"/><text x="489" y="292" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="15" font-weight="700" letter-spacing="3.4" fill="#ff2bd6" text-anchor="start">TOOLS</text><path d="M489 306v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="507" y="326" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">Git / GitHub</text><rect x="765" y="315" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="783" y="315" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="801" y="315" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="819" y="315" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="837" y="315" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M489 340v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="507" y="360" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">VS Code</text><rect x="765" y="349" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="783" y="349" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="801" y="349" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="819" y="349" width="12" height="12" rx="2.5"
+              fill="#00f0ff"/><rect x="837" y="349" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><path d="M489 374v14h10" fill="none" stroke="#16303f" stroke-width="1.5"/><text x="507" y="394" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="400" letter-spacing="0.8" fill="#b9d7e6" text-anchor="start">Linux</text><rect x="765" y="383" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="783" y="383" width="12" height="12" rx="2.5"
+              fill="#8a5cff"/><rect x="801" y="383" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="819" y="383" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><rect x="837" y="383" width="12" height="12" rx="2.5"
+              fill="#0f2029"/><text x="450" y="436" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="13" font-weight="400" letter-spacing="1.6" fill="#33475a" text-anchor="middle">SELF-ASSESSED  ·  4 USED HEAVILY  ·  3 ACTIVELY LEARNING  ·  2 BASICS</text>
+<rect x="0.75" y="0.75" width="898.5" height="454.5" rx="14" fill="none" stroke="#16303f" stroke-width="1.5"/>
+</svg>
