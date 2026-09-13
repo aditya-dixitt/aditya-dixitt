@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" role="img">
+<defs>
+  <pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M30 0H0V30" fill="none" stroke="#0f1c27" stroke-width="1"/>
+  </pattern>
+  <linearGradient id="xp" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8a5cff"/>
+  </linearGradient>
+  <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+    <stop offset="25%" stop-color="#00f0ff"/><stop offset="75%" stop-color="#ff2bd6"/>
+    <stop offset="100%" stop-color="#ff2bd6" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<rect width="900" height="340" rx="14" fill="#05070d"/>
+<rect width="900" height="340" rx="14" fill="url(#g)" opacity="0.5"/>
+<text x="30" y="44" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="17" font-weight="700" letter-spacing="4" fill="#00f0ff" text-anchor="start">PLAYER STATISTICS</text><text x="870" y="44" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="15" font-weight="400" letter-spacing="2" fill="#2e4453" text-anchor="end">AWAITING FIRST SYNC</text><rect x="30" y="60" width="840" height="1.5" fill="url(#rule)"/><text x="450" y="180" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="22" font-weight="400" letter-spacing="4" fill="#6f8598" text-anchor="middle">INITIALIZING TELEMETRY</text><text x="450" y="212" font-family='ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Menlo, Consolas, monospace' font-size="15" font-weight="400" letter-spacing="1.5" fill="#2e4453" text-anchor="middle">run the sync workflow to populate</text>
+<rect x="0.75" y="0.75" width="898.5" height="338.5" rx="14" fill="none" stroke="#16303f" stroke-width="1.5"/>
+</svg>

@@ -107,7 +107,7 @@ the script, and every panel redraws.
 [![GitHub](https://img.shields.io/badge/GitHub-0B0F14?style=flat-square&logo=github&logoColor=00F0FF)](https://github.com/aditya-dixitt)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0B0F14?style=flat-square&logo=linkedin&logoColor=00F0FF)](https://www.linkedin.com/in/aditya-dixit-1140a53b9/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-0B0F14?style=flat-square&logo=leetcode&logoColor=00F0FF)](https://leetcode.com/u/adityadixit1127/)
-[![Email](https://img.shields.io/badge/Email-0B0F14?style=flat-square&logo=gmail&logoColor=00F0FF)](mailto:adityadixit.1127)
+[![Email](https://img.shields.io/badge/Email-0B0F14?style=flat-square&logo=gmail&logoColor=00F0FF)](mailto:adityadixit.1127@gmail.com)
 
 
 <br>
