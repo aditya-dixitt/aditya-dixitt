@@ -12,33 +12,34 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 const CONTENT = {
   profile: [
     ['PLAYER',   'aditya-dixitt'],
-    ['CLASS',    'Software Developer'],
+    ['CLASS',    'Backend / Systems — in training'],
     ['ORIGIN',   'Pune, India'],
     ['STATUS',   'GRINDING'],
     ['CAMPAIGN', 'Act I — Foundations'],
-    ['MISSION',  'Rebuilding Redis from scratch in C++'],
+    ['FOCUS',    'Go · Rust · C++ · Postgres · Linux'],
   ],
-  // tier: 4 = used heavily · 3 = actively learning · 2 = basics down
+  // tier: 4 = used heavily · 3 = actively building with · 2 = basics · 1 = just started
   skills: [
-    ['LANGUAGES', [['C++', 4], ['JavaScript', 3], ['Java', 2]]],
-    ['WEB',       [['HTML / CSS', 3], ['React', 3], ['Node.js', 2]]],
-    ['CORE CS',   [['Data Structures', 3], ['Algorithms', 3], ['OS / DBMS', 2]]],
-    ['TOOLS',     [['Git / GitHub', 4], ['VS Code', 4], ['Linux', 2]]],
+    ['LANGUAGES', [['Python', 4], ['C++', 3], ['JavaScript', 3], ['Go', 1], ['Rust', 1]]],
+    ['BACKEND',   [['REST APIs', 3], ['SQL / SQLite', 3], ['PostgreSQL', 1], ['Docker', 1]]],
+    ['SYSTEMS',   [['Data Structures', 3], ['Algorithms', 3], ['Concurrency', 1], ['Networking', 1]]],
+    ['TOOLS',     [['Git / GitHub', 4], ['Make', 3], ['Linux', 2], ['VS Code', 4]]],
   ],
   quests: [
-    ['01', 'IN PROGRESS', 'Redis, from scratch, in C++',   'Understand a database by building one'],
-    ['02', 'ACTIVE',      'Data Structures & Algorithms',  'Consistent practice, no skipped days'],
-    ['03', 'QUEUED',      'First open-source contribution','One merged PR on someone else’s repo'],
+    ['01', 'SHIPPED',     'SAMANVAY — entity resolution',  '95.4% precision on a locked holdout'],
+    ['02', 'IN PROGRESS', 'Redis, from scratch, in C++',           'Event loop, RESP protocol, KV store'],
+    ['03', 'NEXT',        'Go — concurrent TCP server',            'Learn the language by writing a server'],
+    ['04', 'ACTIVE',      'Data Structures & Algorithms',          'Consistent practice, no skipped days'],
   ],
   achievements: [
     [true,  'First Commit',      'Push your first commit'],
     [true,  'Save File Created', 'Publish a profile README'],
-    [false, 'Ship It',           'Deploy something people can open'],
+    [true,  'Ship It',           'SAMANVAY — running, measured, public'],
+    [true,  'Benchmarked',       'Evaluate against baselines on a locked split'],
+    [false, 'Concurrent',        'Ship something in Go that handles load'],
+    [false, 'Unsafe Territory',  'Write and publish real Rust'],
     [false, 'Open Source',       'Land a merged PR elsewhere'],
-    [false, 'Hackathon',         'Build under a deadline'],
-    [false, 'Century',           '100 commits in one month'],
     [false, 'Constellation',     'First star from a stranger'],
-    [false, 'Streak Runner',     '30-day contribution streak'],
   ],
 };
 
@@ -104,32 +105,42 @@ function profile() {
 
 /* ═══ PANEL: SKILL TREE ═══════════════════════════════════════════════ */
 function skills() {
-  const cols = [30, 465], colW = 405, PITCH = 172, CARD = 152;
-  const H = 88 + PITCH + CARD + 44;
+  const cols = [30, 465], colW = 405;
+  const h = (n) => 82 + n * 34;                    // a card is as tall as its own list
+  const rows = [];
+  for (let i = 0; i < CONTENT.skills.length; i += 2) rows.push(CONTENT.skills.slice(i, i + 2));
+  const rowH = rows.map((r) => Math.max(...r.map(([, l]) => h(l.length))));
+  const tops = [];
+  let y = 88;
+  for (const rh of rowH) { tops.push(y); y += rh + 20; }
+  const H = y + 26;
+
   let b = '';
-  CONTENT.skills.forEach(([cat, list], i) => {
-    const x = cols[i % 2], y = 88 + Math.floor(i / 2) * PITCH;
-    b += card(x, y, colW, CARD);
-    b += t(x + 24, y + 32, cat, { size: 15, fill: C.magenta, weight: 700, ls: 3.4 });
-    list.forEach(([name, tier], j) => {
-      const ry = y + 66 + j * 34;
-      b += `<path d="M${x + 24} ${ry - 20}v14h10" fill="none" stroke="${C.line}" stroke-width="1.5"/>`;
-      b += t(x + 42, ry, name, { size: 17, fill: C.text, ls: 0.8 });
-      for (let p = 0; p < 5; p++) {
-        const on = p < tier;
-        b += `<rect x="${x + 300 + p * 18}" y="${ry - 11}" width="12" height="12" rx="2.5"
-              fill="${on ? (tier >= 4 ? C.cyan : C.violet) : C.track}"/>`;
-      }
+  rows.forEach((row, ri) => {
+    row.forEach(([cat, list], ci) => {
+      const x = cols[ci], top = tops[ri];
+      b += card(x, top, colW, h(list.length));
+      b += t(x + 24, top + 32, cat, { size: 15, fill: C.magenta, weight: 700, ls: 3.4 });
+      list.forEach(([name, tier], j) => {
+        const ry = top + 66 + j * 34;
+        b += `<path d="M${x + 24} ${ry - 20}v14h10" fill="none" stroke="${C.line}" stroke-width="1.5"/>`;
+        b += t(x + 42, ry, name, { size: 17, fill: C.text, ls: 0.8 });
+        for (let p = 0; p < 5; p++) {
+          const on = p < tier;
+          b += `<rect x="${x + 300 + p * 18}" y="${ry - 11}" width="12" height="12" rx="2.5"
+                fill="${on ? (tier >= 4 ? C.cyan : tier === 1 ? C.muted : C.violet) : C.track}"/>`;
+        }
+      });
     });
   });
-  b += t(W / 2, H - 20, 'SELF-ASSESSED  ·  4 USED HEAVILY  ·  3 ACTIVELY LEARNING  ·  2 BASICS',
+  b += t(W / 2, H - 16, 'SELF-ASSESSED  ·  4 USED HEAVILY  ·  3 BUILDING WITH  ·  2 BASICS  ·  1 JUST STARTED',
         { size: 13, fill: C.dim, ls: 1.6, anchor: 'middle' });
   return shell(H, 'SKILL TREE', b, C.magenta);
 }
 
 /* ═══ PANEL: ACTIVE QUESTS ════════════════════════════════════════════ */
 function quests() {
-  const STATUS = { 'IN PROGRESS': C.cyan, ACTIVE: C.green, QUEUED: C.violet };
+  const STATUS = { SHIPPED: C.green, 'IN PROGRESS': C.cyan, NEXT: C.magenta, ACTIVE: C.violet, QUEUED: C.dim };
   const H = 96 + CONTENT.quests.length * 96;
   let b = '';
   CONTENT.quests.forEach(([n, status, title, obj], i) => {
@@ -137,6 +148,9 @@ function quests() {
     b += card(30, y, W - 60, 80);
     b += `<rect x="30" y="${y}" width="4" height="80" rx="2" fill="${col}"/>`;
     b += t(56, y + 32, `QUEST ${n}`, { size: 14, fill: C.dim, ls: 3 });
+    // monospace is ~0.6em per character, so overlap is predictable — catch it at build time
+    if (56 + title.length * 12.8 + 28 > W - 56 - obj.length * 9.9)
+      throw new Error(`Quest ${n}: title + objective are too long for one row. Shorten one of them.\n  title: "${title}"\n  objective: "${obj}"`);
     b += t(56, y + 60, title, { size: 20, fill: C.bright, weight: 700, ls: 0.6 });
     b += t(W - 56, y + 32, status, { size: 14, fill: col, weight: 700, ls: 2.4, anchor: 'end' });
     b += t(W - 56, y + 60, obj, { size: 15, fill: C.muted, ls: 0.8, anchor: 'end' });

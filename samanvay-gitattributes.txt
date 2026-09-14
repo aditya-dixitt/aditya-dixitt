@@ -1,0 +1,11 @@
+# Copy this file to the ROOT of the samanvay repo, named exactly  .gitattributes
+#
+# Why: reports/steward_console_demo.html is a GENERATED export, and at ~85% of the
+# repo by bytes it currently makes GitHub label samanvay — and your whole profile —
+# as an HTML project. Marking it generated removes it from the language stats and
+# collapses its diff. Python becomes the reported language, which is the truth.
+
+reports/*.html            linguist-generated=true
+reports/**                linguist-documentation=true
+data/out/**               linguist-generated=true
+*.csv                     linguist-generated=true
