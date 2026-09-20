@@ -149,10 +149,10 @@ The static panels are generated too, from one `CONTENT` block in
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-0B0F14?style=flat-square&logo=github&logoColor=00F0FF)](https://github.com/aditya-dixitt)
-<!-- UNCOMMENT ONLY THE LINKS YOU ACTUALLY HAVE
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0B0F14?style=flat-square&logo=linkedin&logoColor=00F0FF)](YOUR_URL)
-[![Email](https://img.shields.io/badge/Email-0B0F14?style=flat-square&logo=gmail&logoColor=00F0FF)](mailto:YOUR_EMAIL)
--->
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0B0F14?style=flat-square&logo=linkedin&logoColor=00F0FF)](https://www.linkedin.com/in/aditya-dixit-1140a53b9/)
+[![Email](https://img.shields.io/badge/Email-0B0F14?style=flat-square&logo=gmail&logoColor=00F0FF)](mailto:adityadixit.1127@gmail.com)
+
 
 <br>
 
