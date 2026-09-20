@@ -26,7 +26,7 @@ const CONTENT = {
     ['TOOLS',     [['Git / GitHub', 4], ['Make', 3], ['Linux', 2], ['VS Code', 4]]],
   ],
   quests: [
-    ['01', 'SHIPPED',     'SAMANVAY — entity resolution',  '95.4% precision on a locked holdout'],
+    ['01', 'SHIPPED',     'TULYA — entity resolution',  '95.4% precision on a locked holdout'],
     ['02', 'IN PROGRESS', 'Redis, from scratch, in C++',           'Event loop, RESP protocol, KV store'],
     ['03', 'NEXT',        'Go — concurrent TCP server',            'Learn the language by writing a server'],
     ['04', 'ACTIVE',      'Data Structures & Algorithms',          'Consistent practice, no skipped days'],
@@ -34,7 +34,7 @@ const CONTENT = {
   achievements: [
     [true,  'First Commit',      'Push your first commit'],
     [true,  'Save File Created', 'Publish a profile README'],
-    [true,  'Ship It',           'SAMANVAY — running, measured, public'],
+    [true,  'Ship It',           'TULYA — running, measured, public'],
     [true,  'Benchmarked',       'Evaluate against baselines on a locked split'],
     [false, 'Concurrent',        'Ship something in Go that handles load'],
     [false, 'Unsafe Territory',  'Write and publish real Rust'],

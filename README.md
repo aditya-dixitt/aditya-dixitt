@@ -32,14 +32,14 @@
 
 ## ▍ FEATURED WORK
 
-### SAMANVAY — entity resolution across public-sector material catalogues
+### TULYA — entity resolution across public-sector material catalogues
 
-[`aditya-dixitt/samanvay`](https://github.com/aditya-dixitt/samanvay) · Python ·
+[`aditya-dixitt/tulya`](https://github.com/aditya-dixitt/tulya) · Python ·
 Smart India Hackathon `SIH26099` · Team AlgoRythms
 
 The same bolt sits in three organisations' catalogues under three codes and three
 spellings — and under two different codes at two plants of the *same* company.
-SAMANVAY finds the records that mean the same item and proposes one national code,
+TULYA finds the records that mean the same item and proposes one national code,
 with a human approving every merge.
 
 ```
@@ -73,7 +73,7 @@ will switch on.
 
 <div align="center">
 
-<img src="./assets/panel-quests.svg" width="100%" alt="Active quests — SAMANVAY shipped; Redis from scratch in C++ in progress; Go concurrent TCP server next; DSA practice active.">
+<img src="./assets/panel-quests.svg" width="100%" alt="Active quests — TULYA shipped; Redis from scratch in C++ in progress; Go concurrent TCP server next; DSA practice active.">
 
 <br>
 
