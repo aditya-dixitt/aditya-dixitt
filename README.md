@@ -137,7 +137,7 @@ LEVEL  = floor( sqrt( XP / 250 ) ) + 1
 ```
 
 Regenerated daily by a scheduled Action. Nothing is hand-written and nothing is
-inflated — the numbers are small because the account is new, and that's the point.
+inflated  the numbers are small because the account is new, and that's the point.
 
 The static panels are generated too, from one `CONTENT` block in
 [`scripts/build-panels.mjs`](./scripts/build-panels.mjs).
